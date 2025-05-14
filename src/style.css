@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Digital";
+  src: url('/DS-DIGI.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/* @font-face { */
+/*   font-family: "RobotoCondensed-Black"; */
+/*   src: url('/RobotoCondensed-Black.ttf') format('truetype'); */
+/*   font-weight: normal; */
+/*   font-style: normal; */
+/* } */
+@font-face {
+  font-family: "RobotoCondensed-Bold";
+  src: url('/RobotoCondensed-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+:root {
+  --num-font: Digital;
+}
+/* #hour,#min, .sec-container,#colon,.wrapper { */
+/*   border: 1px dotted yellow; */
+/* } */
+
+html,body {
+  padding: 0;
+  margin: 0;
+  }
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vw/13 * 5.67);
+}
+
+#hour {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: calc(100vw/13 * 5);
+  font-family: var(--num-font),system-ui;
+  width: calc(10.42vw*3);
+  overflow: hidden;
+}
+#min {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: calc(100vw/13 * 4.8);
+  font-family: var(--num-font),system-ui;
+  width: calc(9.0909vw *4);
+  overflow: hidden;
+}
+#sec {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
+  font-size: calc(100vw/13 * 3.35);
+  font-family: var(--num-font),system-ui;
+  min-width: calc(9.0909vw *3);
+  overflow: hidden;
+}
+.sec-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  }
+
+#colon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+  width: calc(9.09*1)vw;
+  font-weight: 100;
+  font-size: calc(100vw/13 * 3);
+  font-family: system-ui;
+}
+#hour, #min, #sec, #colon {
+  color: cyan
+}
+
